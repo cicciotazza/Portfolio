@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>                        <!--added HEAD v1.4-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Francesco Tazzer here</title>
+    <link rel="shortcut icon" href="img/favicon1.ico" type="image/x-icon" />
+    <!--added to normalize the browser rendering v1.5-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <!--added my new font Merienda which looks cool v1.5-->
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">  <!--adedd CSS for 1.5-->
+</head>
+
+<main>
+  <header class="page-header">          <!--addedd class to HEADER and IMG-->
+        <img src="img/logo.png" width="300px" height="100" alt="Personal logo of Francesco Tazzer" class="logo_img">  <!-- Alt modified 1.4 -->
+    
+        <nav class="main-navigation page-header__item">           <!--added class v1.6 introduces navigation_list v1.5-->
+          <ul role="menubar" class="navigation-list">
+            <li role="presentation"><a href="index.html" role="menuitem" target="_self" class="navigation-list__item">Home</a></li>
+            <li role="presentation"><a href="about.html" role="menuitem" target="_blank" class="navigation-list__item">About</a></li></li>
+            <li role="presentation"><a href="work.html" role="menuitem" target="_blank" class="navigation-list__item">Work</a></li>
+            <li role="presentation"><a href="contact.html" role="menuitem" target="_blank" class="navigation-list__item--active">Contact</a></li>
+                      <!--removed CODEPEN link v1.6-->
+          </ul>
+        </nav>
+  </header>                                     <!-- It looks better but the nav section is not on the right -->                              
+
+<body>        <!--addedd BODY on 1.4 task-->
+        <!-- <article> removed as there is already <main>  v1.5-->
+ <section>
+  <div> 
+      Francesco Tazzer<br>
+      Bopparder Str. 1<br>
+      10318, Berlin<br>
+      Deutschland<br>
+
+      Tel <a href="tel:+491234567">+49 1575 9578 873</a><br>
+      Skype <a href="skype:francesco.tazzer"> Francesco.Tazzer</a><br>
+      Contact me <a href="mailto:cicciotazza@hotmail.com">cicciotazza@hotmail.com</a><br>
+  </div>
+ </section>
+
+ <section>
+   <div class="profile">
+      <h4>Work in progress... <progress class="">??</progress></h4>
+      <h5>if you want to get in touch</h5>
+
+      <form action="/action_page.php" class="t1"></form>        
+        <label for="first-name">First name:</label>
+        <input type="text" id="first-name" name="first-name" value="name" pattern="[a-z]{1,}"><br>  
+
+        <label for="last-name">Last name:</label>
+        <input type="text" id="last-name" name="last-name" value="surname" pattern="[a-z]{1,}"><br>
+
+        <label class="standard-label" for="contact-telephone">Telephone: </label>
+        <input type="telephone" id="contact-telephone" name="telephone" value="xxx-xxx-xxxx" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required><br>
+        
+        <label for="email" class="text">Email:</label>                    <!-- the email form should be in line with the other above -->
+        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required maxlength="240"><br>
+                                                          <!--addedd MAXLENGHT also found MINLENGHT-->
+        <label class="contactLabel" for="contactMessage">Message: </label>                                                   
+        <textarea maxlength="240" id="contactMessage" required maxlenght="240"></textarea><br>                                                  
+        
+        <input type="reset"><br>
+        <input type="submit">
+   </div>
+</section>
+      
+<section>
+  <h5>Which method do you prefer?</h5>
+  <input type="checkbox" id="choice1" name="choice1" value="c1">
+  <label for="choice1"> Phone Call</label><br>
+  <input type="checkbox" id="choice2" name="choice2" value="c2">
+  <label for="choice2"> Email </label><br><br>        
+  <input type="submit" value="Submit"><br>
+</section>
+</form>
+
+
+    <footer class="page-footer">    
+        
+      <!--addev class v1.6-->
+        <div class="social-media">                 <!--NAV has been cancelled or graphic elements did not work v1.6-->  
+            <h4>Find me on</h4>                           <!--addedo SOCIAL-MEDIA and then PAGE-FOOTER to DIV-->
+            <img src="img/github_icon.svg" width="50px" height="50px" alt="github's icon">
+            <!-- Fix this dimension -->
+            <img src="img/twitter_icon.svg" width="50px" height="50px" alt="twitter's icon">
+            <!-- downloaded 4084 and resized -->
+            <img src="img/linkedin_icon.svg" width="50px" height="50px" alt="linkedin's icon">
+        </div>
+    <!--NAV has been cancelled or graphic elements did not work v1.6--> 
+    </footer>
+
+</main>
+<script src="js/tota11y.min.js"></script>
+
+</body>                                       <!--added the closing BODY-->
+</html>
+    
+
+    
