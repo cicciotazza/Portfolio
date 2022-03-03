@@ -1,94 +1,207 @@
 <!DOCTYPE html>
 <html>
-<head>                        <!--added HEAD v1.4-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Francesco Tazzer - Portfolio</title>
-    <link rel="shortcut icon" href="img/favicon1.ico" type="image/x-icon" />
-    <!--added to normalize the browser rendering v1.5-->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <!--added my new font Merienda which looks cool v1.5-->
-    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">  <!--adedd CSS for 1.5-->
+
+<head>
+  <!--added HEAD v1.4-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Francesco Tazzer - Portfolio</title>
+  <link rel="shortcut icon" href="img/favicon1.ico" type="image/x-icon" />
+  <!--added to normalize the browser rendering v1.5-->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <!--added my new font Merienda which looks cool v1.5-->
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <!--adedd CSS for 1.5-->
 </head>
 
 
 
 
 <main>
-    <!-- Header including the logo and the main navigation -->
-  <header class="page-header">          <!--addedd class to HEADER and IMG-->
-        <img src="img/logo.png" width="300px" height="100" alt="Personal logo of Francesco Tazzer" class="logo_img">  <!-- Alt modified 1.4 -->
-    
-        <nav class="main-navigation page-header__item">           <!--added class v1.6 introduces navigation_list v1.5-->
-          <ul role="menubar" class="navigation-list">
-            <li role="presentation"><a href="index.html" role="menuitem" target="_self" class="navigation-list__item">Home</a></li>
-            <li role="presentation"><a href="about.html" role="menuitem" target="_blank" class="navigation-list__item">About</a></li>
-            <li role="presentation"><a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a></li>
-            <li role="presentation"><a href="contact.html" role="menuitem" target="_blank" class="navigation-list__item">Contact</a></li>
-          </ul>            <!--removed CODEPEN link v1.6-->
-        </nav>  
-  </header>      
-        <!-- Main content -->
-<body>        
-      <section>
-          <h1 class="t1">Work</h1><br>
-          <div class="grid">            <!-- Grid items will live here -->
-            <div class="grid__item">      
-              <h2>Mobile web app</h2>
-              <p><h5>Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've created the HTML and CSS templates.</h5></p>
-              <a href="#">See project on GitHub</a>
-            </div>
-          
-            <div class="grid__item">
-              <h2>Native MacOS application</h2>
-              <p><h5>Within this project, I was responsible for the frontend. It’s written in JavaFX.</p></h5></p>
-              <a href="#">See project on GitHub</a>
-            </div>
-          
-            <div class="grid__item">
-              <h2>Node.js PDF generation</h2>
-              <p><h5>Within this project, I created a service that generates PDF out of a webpages with the helpo of a node.js server.</p></h5>
-              <a href="#">See project on GitHub</a>
-            </div>
-          
-            <div class="grid__item">
-                <h2>Styleguide for Portfolio page</h2>
-                <p><h5>Here you can find the styleguide I've created for this portfolio page. It was created with the livingstyleguide gem and grunt.</p></h5></p>
-                <a href="#">See styleguide</a>
-            </div>
-          
-            <div class="grid__item">
-                <h2>Medium blog</h2>
-                <p><h5>I am also writiing on medium.com about React.js.</p></h5></p>
-                <a href="#">Read my latest blog</a>
-            </div>
-          
-            <div class="grid__item">
-              <h2>Your project</h2>
-              <p><h5>I can help in realizing front-end and back-end projects with the following technologies: React.JS, Javascript, Java, JavaFX, HTLM and CSS. I am also happy to learn other technologies if neeeded.</p></h5></p>
-              <a href="contact.html">Contact me</a>
-            </div>
+  <!-- Header including the logo and the main navigation -->
+
+  <body>
+    <header class="page-header">
+      <!--addedd class to HEADER and IMG-->
+      <img src="img/logo.png" width="300px" height="100" alt="Personal logo of Francesco Tazzer" class="logo_img">
+      <!-- Alt modified 1.4 -->
+
+      <nav class="main-navigation page-header__item">
+        <!--added class v1.6 introduces navigation_list v1.5-->
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation"><a href="index.html" role="menuitem" target="_self"
+              class="navigation-list__item">Home</a></li>
+          <li role="presentation"><a href="about.html" role="menuitem" target="_blank"
+              class="navigation-list__item">About</a></li>
+          <li role="presentation"><a href="work.html" role="menuitem"
+              class="navigation-list__item navigation-list__item--active">Work</a></li>
+          <li role="presentation"><a href="contact.html" role="menuitem" target="_blank"
+              class="navigation-list__item">Contact</a></li>
+        </ul>
+        <!--removed CODEPEN link v1.6-->
+      </nav>
+    </header>
+    <!-- Main content -->
+
+
+    <section>
+      <h1>Projects</h1>
+      <div class="grid">
+
+        <div class="grid__item" style="border-radius: 15px">
+          <h2>Pokedéx</h2>
+          <div class="portfolio-image">
+            <img src="screen/Pokedex.png" alt="screenshot pokedex" style="width: 100%; height: 100%" />
           </div>
-      </section>
+          <div class="work-info">
+            <p>
+              Pokédex is an application built with Javascript,
+              HTML, CSS and Bootstrap. Visitors can use the search bar to look for
+              a specific Pokémon inside a collection loaded from an external API.
+              More details about the single Pokemon are
+              available by cliking on the name and displayed in a modal pop-up.
+            </p>
+          </div>
+          <button class="github-button"
+            onclick="window.location.href='https://github.com/cicciotazza/Pokemon-02'">Github</button>
+          <button class="website-button"
+            onclick="window.location.href='https://cicciotazza.github.io/Pokemon-02/'">Website</button>
+        </div>
+
+        <div class="grid__item" style="border-radius: 15px">
+          <h2>myFlix API</h2>
+          <div class="portfolio-image">
+            <img src="screen/3.png" alt="screenshot pokedex" style="width: 100%; height: 100%" />
+          </div>
+          <div class="work-info">
+            <p>
+              The serverside of myFlix app where it's possibile
+              to make CRUD operations on the database via Postman.
+              Movies, directors and genres can be checked, also register
+              a new user, loggin in, add a movie to a list of favourites etc
+              Developed using Node.js, Express and Mongoose.
+              It's built using the MERN stack.
+            </p>
+          </div>
+          <button class="github-button"
+            onclick="window.location.href='https://github.com/cicciotazza/myFlix'">Github</button>
+          <button class="website-button"
+            onclick="window.location.href='https://herokumyflixdb.herokuapp.com/'">Website</button>
+        </div>
+
+        <div class="grid__item" style="border-radius: 15px">
+          <h2>myFlix React</h2>
+          <div class="portfolio-image">
+            <img src="screen/myFlix-React.png" alt="screenshot myFlix" style="width: 100%; height: 100%" />
+          </div>
+          <div class="work-info">
+            <p>
+              The client-side of myFlix API which fetches data from the server
+              hosted on Heroku. It's the graphical unit interphace developed using React,
+              React Bootstrap and React Redux and built using the MERN stack.
+              Users can register themselves, logging in, checking the catalogue,
+              update the profile etc.
+            </p>
+          </div>
+          <button class="github-button"
+            onclick="window.location.href='https://github.com/cicciotazza/myFlix-client'">Github</button>
+          <button class="website-button"
+            onclick="window.location.href='https://cicciotazza-myflix.netlify.app/'">Website</button>
+        </div>
+
+        <div class="grid__item" style="border-radius: 15px">
+          <h2>Meet App</h2>
+          <div class="portfolio-image">
+            <img src="screen/MeetApp.png" alt="screenshot meet app" style="width: 100%; height: 100%" />
+          </div>
+          <div class="work-info">
+            <p>
+              Serverless and progressive web application (PWA) built with React
+              using a test-driven development (TDD) technique. The app uses
+              the Google Calendar API to fetch upcoming events and AWS Lambda
+              as the authorisation server.
+              Available offline through a service worker.
+              Data visualization using a Recharts library, a scatter graph and a pie
+              chart.
+            </p>
+          </div>
+          <button class="github-button"
+            onclick="window.location.href='https://github.com/cicciotazza/meet'">Github</button>
+          <button class="website-button"
+            onclick="window.location.href='https://cicciotazza.github.io/meet/'">Website</button>
+        </div>
+
+        <div class="grid__item" style="border-radius: 15px">
+          <h2>Chat app</h2>
+          <div class="portfolio-image">
+            <img src="screen/App-Chat.png" alt="screenshot chat app" style="width: 50%; height: 50%" />
+          </div>
+          <div class="work-info">
+            <p>
+              A mobile chat app built using React, React Native, and Gifted Chat
+              to let users chat with each other. It's possible to pick a background
+              color, read/send messages, share images and location.
+              The app uses also Async Storage to allow users to view
+              stored messages when offline and the Google service Firestore to store
+              data, such as messages and images.
+            </p>
+          </div>
+          <button class="github-button"
+            onclick="window.location.href='https://github.com/cicciotazza/App-chat'">Github</button>
+        </div>
+
+        <div class="grid__item" style="border-radius: 15px">
+          <h2>myFlix client - Angular</h2>
+          <div class="portfolio-image">
+            <img src="screen/myFlix-Angular.png" alt="screenshot angular app" style="width: 100%; height: 100%" />
+          </div>
+          <div class="work-info">
+            <p>
+              Another frontend of myFlix API created using Angular. This application
+              allows users to register a profile, log in, consult a list of
+              movies. Yet it offers the chance to see the genre, director
+              description of each movie considered. Also, favoutires movies can be added to a list and deleted.
+              The app has been built using Angular,
+              Angular Material, Typescript and and Typedoc documentation has been added.
+            </p>
+          </div>
+          <button class="github-button"
+            onclick="window.location.href='https://github.com/cicciotazza/myFlix-Angular-client'">Github</button>
+          <button class="website-button"
+            onclick="window.location.href='https://cicciotazza.github.io/myFlix-Angular-app/'">Website</button>
+        </div>
+
+    </section>
     <!-- Footer with links to social media profiles -->
 
-    <footer class="page-footer">    
-    
+    <footer class="page-footer">
       <!--addev class v1.6-->
-        <div class="social-media">                 <!--NAV has been cancelled or graphic elements did not work v1.6-->  
-            <h4>Find me on</h4>                           <!--addedo SOCIAL-MEDIA and then PAGE-FOOTER to DIV-->
-            <img src="img/github_icon.svg" width="50px" height="50px" alt="github's icon">
-            <!-- Fix this dimension -->
-            <img src="img/twitter_icon.svg" width="50px" height="50px" alt="twitter's icon">
-            <!-- downloaded 4084 and resized -->
-            <img src="img/linkedin_icon.svg" width="50px" height="50px" alt="linkedin's icon">
-        </div>
-        <!--NAV has been cancelled or graphic elements did not work v1.6--> 
+      <div class="social-media">
+        <!--NAV has been cancelled or graphic elements did not work v1.6-->
+        <h4>Find me on</h4>
+        <a href="https://www.facebook.com/francesco.tazzer/" target="_blank">
+          <img src="img/fb-icon.png" alt="Facebook Francesco Tazzer" height="48px" width="48px" /></a>
+
+        <a href="https://www.github.com/cicciotazza" target="_blank">
+          <img src="img/github_icon.svg" alt="Github Francesco Tazzer" width="48px" height="48px" /></a>
+
+        <a href="https://twitter.com/FrancescoTazzer" target="_blank">
+          <img src="img/twitter_icon.png" alt="Twitter Francesco Tazzer" width="48px" height="48px" /></a>
+
+        <a href="https://it.linkedin.com/in/francesco-tazzer-73a9443a" target="_blank">
+          <img src="img/linkedin_icon.svg" alt="Linkedin Francesco Tazzer" height="48px" width="48px" /></a>
+
+        <a href="https://www.instagram.com/f.tazzer" target="_blank">
+          <img src="img/ig_icon.png" alt="Instagram Francesco Tazzer" height="48px" width="48px" /></a>
+      </div>
     </footer>
 
 </main>
-      <script src="js/tota11y.min.js"></script><br><hr>         <!--Added this script in order to check the web page-->
-</body>                                       <!--added the closing BODY-->
-</html>
+<script src="js/tota11y.min.js"></script><br>
+<hr>
+<!--Added this script in order to check the web page-->
+</body>
+<!--added the closing BODY-->
 
-     
+</html>
