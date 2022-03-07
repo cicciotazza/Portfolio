@@ -11,6 +11,8 @@
           box-sizing: border-box;
 }
 
+html,body,.container{ height: 100%; margin: 0; padding: 0; }
+
 header
 {
   font-family: Raleway;
@@ -22,11 +24,9 @@ header
 
 footer
 {
-  font-family: Raleway;
-  margin: 0 auto;
-	padding: 5em 3em;
-	text-align: center;
-  background: white;
+  bottom:0;
+  left:0;
+  width:100%;
 }
 
 body {
@@ -144,12 +144,13 @@ button {
   color: black;
   border: 1px solid #000000;
   text-decoration: none;
-  padding: 2px;
-  border-radius: 5px;
-  border-bottom: 3px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition: 3s;
-  transition: 3s;
+  padding: 3px;
+  border-radius: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 2s;
+  transition: 2s;
   opacity: 1;
+  
 }
 .button3 {
   border: none;
@@ -196,7 +197,7 @@ button:hover, button:focus {
 }
 
 .button2:hover {
-  background-color: black;;
+  background-color: grey;;
   color: white;
   opacity: 1;
   font-size: 30px;
@@ -291,8 +292,12 @@ button:hover, button:focus {
 }
 
 .social-media {
-  left:50px;
-  top: 50px;
+  margin-top: 20px;
+  bottom: 0px;
+  left:0px;
+  width:100%;
+  position: absolute;
+
 }
 
 .div1 {
@@ -519,4 +524,15 @@ button:hover, button:focus {
 .cloud-back {
     -webkit-animation: 10s cloud-move-reverse infinite alternate ease-in;
             animation: 10s cloud-move-reverse infinite alternate ease-in;
+}
+
+.languages {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  margin: 2px;
+}
+
+.languages:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
 }
